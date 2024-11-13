@@ -11,8 +11,9 @@ app.use(express.json());
 // Configure CORS
 const cors = require('cors');
 app.use(cors({
-  origin: 'https://contact-list-book-project.onrender.com' || 'https://contact-listbook.netlify.app/', // Adjust as necessary
+  origin: ['https://contact-list-book-project.onrender.com' , 'https://contact-listbook.netlify.app/'] ,// Adjust as necessary
   credentials: true
+  
 }));
 
 // Connect to MongoDB
