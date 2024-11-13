@@ -11,7 +11,7 @@ app.use(express.json());
 // Configure CORS
 const cors = require('cors');
 app.use(cors({
-  origin: 'http://localhost:3000', // Adjust as necessary
+  origin: 'https://contact-list-book-project.onrender.com', // Adjust as necessary
   credentials: true
 }));
 
