@@ -26,7 +26,7 @@ const Login = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:8000/api/auth/login', { email, password });
+      const response = await axios.post('https://contact-list-book-project.onrender.com/api/auth/login', { email, password });
       localStorage.setItem('token', response.data.token);
       toast.success('Logged in successfully!');
       navigate('/contacts');

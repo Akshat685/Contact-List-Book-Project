@@ -35,7 +35,7 @@ const Signup = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:8000/api/auth/signup', { name, email, password });
+      const response = await axios.post('https://contact-list-book-project.onrender.com/api/auth/signup', { name, email, password });
       
       // Save the name to localStorage after successful signup
       localStorage.setItem('name', response.data.name); // Assuming response includes the user's name

@@ -14,7 +14,7 @@ const ContactList = () => {
     const token = localStorage.getItem("token");
 
     try {
-      const response = await axios.get("http://localhost:8000/api/contacts", {
+      const response = await axios.get("https://contact-list-book-project.onrender.com/api/contacts", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setContacts(response.data);
@@ -35,7 +35,7 @@ const ContactList = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.delete(
-        `http://localhost:8000/api/contacts/${userIdToDelete}`,
+        `https://contact-list-book-project.onrender.com/api/contacts/${userIdToDelete}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }

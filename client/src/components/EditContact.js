@@ -20,7 +20,7 @@ const EditContact = () => {
     const fetchContact = async () => {
       const token = localStorage.getItem('token');
       try {
-        const response = await axios.get(`http://localhost:8000/api/contacts/${id}`, {
+        const response = await axios.get(`https://contact-list-book-project.onrender.com/api/contacts/${id}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         if (response.data) {
@@ -81,7 +81,7 @@ const EditContact = () => {
 
     const token = localStorage.getItem('token');
     try {
-      const response = await axios.put(`http://localhost:8000/api/contacts/${id}`, contact, {
+      const response = await axios.put(`https://contact-list-book-project.onrender.com/api/contacts/${id}`, contact, {
         headers: { Authorization: `Bearer ${token}` },
       });
       toast.success('Contact updated successfully!', { position: 'top-right' });
