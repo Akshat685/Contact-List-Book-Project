@@ -54,7 +54,7 @@ const Signup = () => {
       <div className="signup-image-section">
         <div>
           <h1>Join Us</h1>
-          <p>Become a part of our community and manage your contacts effortlessly.</p>
+          <p>Become a part of our communitys and manage your contacts effortlessly.</p>
         </div>
       </div>
 
